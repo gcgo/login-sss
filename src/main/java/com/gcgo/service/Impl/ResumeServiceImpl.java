@@ -8,6 +8,7 @@ import org.springframework.stereotype.Service;
 import org.springframework.transaction.annotation.Transactional;
 
 import java.util.List;
+import java.util.Optional;
 
 @Service
 @Transactional
@@ -23,6 +24,12 @@ public class ResumeServiceImpl implements ResumeService {
     @Override
     public List<Resume> findAll() {
         return resumeDao.findAll();
+    }
+
+    @Override
+    public Resume findById(Long id) {
+        Optional<Resume> optional = resumeDao.findById(id);
+        return optional.get();
     }
 
     @Override

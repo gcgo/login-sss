@@ -30,8 +30,8 @@
             <td>${resume.name}</td>
             <td>${resume.address}</td>
             <td>${resume.phone}</td>
-            <td><a href="editemp/${resume.id}">编辑</a></td>
-            <td><a href="deleteemp/${resume.id}">删除</a></td>
+            <td><a href="editResume/${resume.id}">编辑</a></td>
+            <td><a href="deleteResume/${resume.id}">删除</a></td>
         </tr>
     </c:forEach>
 </table>

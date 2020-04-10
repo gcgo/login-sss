@@ -11,6 +11,9 @@ public interface ResumeService {
     //查询所有
     public List<Resume> findAll();
 
+    //查询单个
+    public Resume findById(Long id);
+
     //修改
     public void updateResume(Resume resume);
 
