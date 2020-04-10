@@ -52,4 +52,10 @@ public class ResumeController {
         return "redirect:/resume/findAll";//跳转到查询所有
     }
 
+    @RequestMapping(value = "/deleteResume/{id}")
+    public String delete(@PathVariable Long id) {
+        resumeService.deleteById(id);
+        return "redirect:/resume/findAll";//跳转到查询所有
+    }
+
 }
