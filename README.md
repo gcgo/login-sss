@@ -8,13 +8,13 @@
 
 - 默认地址：http://localhost:8080/，进入首页，只有一个按钮："查看简历"，点击按钮进入登录页面
 
-  ![image-20200410171556235](C:\Users\窝火西决\AppData\Roaming\Typora\typora-user-images\image-20200410171556235.png)
+  ![image-20200410171556235](https://github.com/gcgo/login-sss/blob/master/img/image-20200410171556235.png)
 
 - 登录用户名：admin，密码：admin，输入错误跳回登录页面重新输入
 
-  ![image-20200410171649111](C:\Users\窝火西决\AppData\Roaming\Typora\typora-user-images\image-20200410171649111.png)
+  ![image-20200410171649111](https://github.com/gcgo/login-sss/blob/master/img/image-20200410171649111.png)
 
 - 实现resume表的增删改查
 
-  ![image-20200410171710226](C:\Users\窝火西决\AppData\Roaming\Typora\typora-user-images\image-20200410171710226.png)
+  ![image-20200410171710226](https://github.com/gcgo/login-sss/blob/master/img/image-20200410171710226.png)
 
