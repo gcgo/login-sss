@@ -22,5 +22,15 @@ http://www.springframework.org/schema/mvc/spring-mvc.xsd
     -->
     <mvc:annotation-driven />
 
-    <mvc:resources location="/WEB-INF/js/" mapping="/js/**" />
+<!--    <mvc:resources location="/WEB-INF/js/" mapping="/js/**" />-->
+
+    <mvc:interceptors>
+        <!--        <bean class="com.gcgo.interceptor.MyInterceptor"/>-->
+        <mvc:interceptor>
+            <mvc:mapping path="/**" />
+            <mvc:exclude-mapping path="/log/login"/>
+            <bean class="com.gcgo.interceptor.LoginInterceptor" />
+        </mvc:interceptor>
+
+    </mvc:interceptors>
 </beans>

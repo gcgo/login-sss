@@ -17,6 +17,7 @@ public class ResumeController {
     @Autowired
     private ResumeService resumeService;
 
+    //查询所有
     @RequestMapping("/findAll")
     public String findAll(Model model) {
         List<Resume> resumeList = resumeService.findAll();
@@ -27,17 +28,20 @@ public class ResumeController {
         return "list";
     }
 
+    //跳转到添加简历页面
     @RequestMapping("/addResumePage")
     public String showform() {
         return "addResumePage";
     }
 
+    //添加
     @RequestMapping(value = "/save")
     public String save(Resume resume) {
         resumeService.save(resume);
         return "redirect:/resume/findAll";//跳转到查询所有
     }
 
+    //查询单个，并进入编辑页面
     @RequestMapping(value = "/editResume/{id}")
     public String edit(@PathVariable Long id, Model model) {
         Resume one = resumeService.findById(id);
@@ -45,6 +49,7 @@ public class ResumeController {
         return "editResumePage";
     }
 
+    //编辑并更新
     @RequestMapping(value = "/editsave")
     public String editsave(@ModelAttribute("") Resume resume) {
         System.out.println(resume.getId());
@@ -52,10 +57,13 @@ public class ResumeController {
         return "redirect:/resume/findAll";//跳转到查询所有
     }
 
+    //删除
     @RequestMapping(value = "/deleteResume/{id}")
     public String delete(@PathVariable Long id) {
         resumeService.deleteById(id);
         return "redirect:/resume/findAll";//跳转到查询所有
     }
+
+
 
 }
