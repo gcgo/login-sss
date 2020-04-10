@@ -9,7 +9,7 @@ public interface ResumeService {
     public void save(Resume resume);
 
     //查询所有
-    public List<Resume> findALL();
+    public List<Resume> findAll();
 
     //修改
     public void updateResume(Resume resume);

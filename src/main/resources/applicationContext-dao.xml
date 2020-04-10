@@ -15,7 +15,7 @@ https://www.springframework.org/schema/data/jpa/spring-jpa.xsd
     <context:property-placeholder location="classpath:jdbc.properties" />
     <!--第三⽅jar中的bean定义在xml中-->
     <bean id="dataSource" class="com.alibaba.druid.pool.DruidDataSource">
-        <property name="driver" value="${jdbc.driver}" />
+        <property name="driverClassName" value="${jdbc.driver}" />
         <property name="url" value="${jdbc.url}" />
         <property name="username" value="${jdbc.username}" />
         <property name="password" value="${jdbc.password}" />
@@ -78,7 +78,9 @@ https://www.springframework.org/schema/data/jpa/spring-jpa.xsd
     jdbcTemplate/mybatis 使⽤的是DataSourceTransactionManager
     jpa规范： JpaTransactionManager
     -->
-
+<!--    <bean id="transactionManager" class="org.springframework.orm.jpa.JpaTransactionManager">-->
+<!--        <property name="entityManagerFactory" ref="entityManagerFactory" />-->
+<!--    </bean>-->
     <!--5、声明式事务配置-->
     <!--
     <tx:annotation-driven/>

@@ -21,7 +21,7 @@ public class ResumeServiceImpl implements ResumeService {
     }
 
     @Override
-    public List<Resume> findALL() {
+    public List<Resume> findAll() {
         return resumeDao.findAll();
     }
 
