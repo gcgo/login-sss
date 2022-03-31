@@ -22,7 +22,7 @@
         <jstl.version>1.2</jstl.version>
         <taglibs.version>1.1.2</taglibs.version>
 
-        <spring.version>5.1.12.RELEASE</spring.version>
+        <spring.version>5.3.18</spring.version>
         <jpa.version>2.1.8.RELEASE</jpa.version>
 <!--        <hibernat.version>5.4.0.Final</hibernat.version>-->
         <hibernat.version>4.3.11.Final</hibernat.version>
