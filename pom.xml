@@ -26,7 +26,7 @@
         <jpa.version>2.1.8.RELEASE</jpa.version>
 <!--        <hibernat.version>5.4.0.Final</hibernat.version>-->
         <hibernat.version>4.3.11.Final</hibernat.version>
-        <mysql.version>5.1.46</mysql.version>
+        <mysql.version>8.0.28</mysql.version>
     </properties>
 
     <dependencies>
